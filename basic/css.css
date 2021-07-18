@@ -1,3 +1,6 @@
 body{
-    background-color: cyan;
+    /* background-color: cyan; */
+    display: flex;
+    background-image: url(./test.jpg);
+
 }
