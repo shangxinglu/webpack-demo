@@ -1,6 +1,6 @@
 
 module.exports = {
-    extends:'eslint:recommended',
+      extends:'eslint:recommended',
     // parse:'babel-eslint',
     rules:{
         // 'for-direction':'off',
