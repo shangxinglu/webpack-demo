@@ -1,5 +1,8 @@
+'use strict';
+
 import "./css.css";
 import "./common.scss";
+
 
 
 // import test from './test.jpg';
