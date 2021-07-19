@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "basic": "webpack --config ./basic/webpack.config.js"
+    "basic": "webpack --config ./basic/webpack.config.js",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
