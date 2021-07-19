@@ -4,18 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "basic": "webpack --config ./basic/webpack.config.js",
-    "precommit":"lint-staged"
-    
+    "basic": "webpack --config ./basic/webpack.config.js"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npm run precommit"
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \" pre commit\""
     }
   },
-  "lint-staged":{
-      "*.js":["eslint --fix","git add"]
-    
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
