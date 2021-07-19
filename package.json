@@ -8,9 +8,8 @@
     "precommit":"lint-staged"
   },
   "lint-staged":{
-    "linters":{
       "*.js":["eslint --fix","git add"]
-    }
+    
   },
   "author": "",
   "license": "ISC",
