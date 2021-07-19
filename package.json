@@ -5,16 +5,12 @@
   "main": "index.js",
   "scripts": {
     "basic": "webpack --config ./basic/webpack.config.js",
-    "prepare": "husky install"
+    "precommit": "lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo \" pre commit\""
-    }
-  },
+ 
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
+      "eslint",
       "git add"
     ]
   },
@@ -32,7 +28,6 @@
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
-    "husky": "^7.0.1",
     "lint-staged": "^11.0.1",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss": "^8.3.5",
@@ -43,7 +38,8 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.42.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "dart-sass": "^1.25.0",
