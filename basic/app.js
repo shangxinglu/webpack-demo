@@ -3,7 +3,7 @@
 import "./css.css";
 import "./common.scss";
 
-b=3;
+c=4;
 
 // import test from './test.jpg';
 
