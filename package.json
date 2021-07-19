@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "basic": "webpack --config ./basic/webpack.config.js",
-    "precommit":"lint-staged"
+    
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"lint-staged"
+    }
   },
   "lint-staged":{
       "*.js":["eslint --fix","git add"]
