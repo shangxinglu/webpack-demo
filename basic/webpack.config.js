@@ -13,7 +13,7 @@ const Uglifyplugin = require('uglifyjs-webpack-plugin');
 module.exports = {
     mode: 'development',
     // mode:'production',
-
+    devtool:'source-map',
     entry: './basic/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),

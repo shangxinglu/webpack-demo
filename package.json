@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "basic": "webpack --config ./basic/webpack.config.js",
+    "library": "webpack --config ./library/webpack.config.js",
     "precommit": "lint-staged"
   },
  
   "lint-staged": {
-    "*.js": [
+    "/!(dist)/*.js": [
       "eslint",
       "git add"
     ]
